@@ -1,0 +1,70 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  labels:
+  - dependencies
+  ignore:
+  - dependency-name: "@babel/*"
+    versions:
+    - ">= 0"
+  - dependency-name: babel-plugin-preval
+    versions:
+    - ">= 3.0"
+  - dependency-name: core-js
+    versions:
+    - ">= 0"
+  - dependency-name: "@date-io/core"
+    versions:
+    - ">= 0"
+  - dependency-name: "@date-io/date-fns"
+    versions:
+    - ">= 0"
+  - dependency-name: jss-*
+    versions:
+    - ">= 0"
+  - dependency-name: raw-loader
+    versions:
+    - ">= 0"
+  - dependency-name: react-dom
+    versions:
+    - ">= 0"
+  - dependency-name: react-is
+    versions:
+    - ">= 0"
+  - dependency-name: react-test-renderer
+    versions:
+    - ">= 0"
+  - dependency-name: size-limit
+    versions:
+    - ">= 0"
+  - dependency-name: tslint
+    versions:
+    - 5.x
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: node-notifier
+    versions:
+    - 8.0.1
+  - dependency-name: "@types/react-dom"
+    versions:
+    - 17.0.0
+  - dependency-name: marked
+    versions:
+    - 1.2.5
+  - dependency-name: typescript
+    versions:
+    - 4.1.2
+  - dependency-name: "@storybook/addon-actions"
+    versions:
+    - 6.1.2
+  - dependency-name: prismjs
+    versions:
+    - 1.21.0
+  - dependency-name: karma
+    versions:
+    - 5.2.3
